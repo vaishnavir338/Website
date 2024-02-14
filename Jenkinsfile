@@ -10,8 +10,8 @@ pipeline{
       }
       stage("Build"){
         steps{
-          echo " Building the image"
-          sh "docker build /var/lib/jenkins/workspace/pipeline/ -t website"
+          echo "Building the image"
+          sh "sudo docker build /var/lib/jenkins/workspace/pipeline/ -t website"
         }
       }
     }
