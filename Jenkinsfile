@@ -9,11 +9,11 @@ pipeline{
         }
       }
       stage('Building image') {
-      steps{
-        script {
-          dockerImage = docker.build website
+        steps{
+          script {
+            dockerImage = docker.build website
+          }
         }
       }
-    }
     }
 }
