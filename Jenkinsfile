@@ -12,7 +12,8 @@ pipeline{
         steps{
           echo "Building image"
         }
-      }stage('deploy on dockerhub') {
+      }
+      stage('deploy on dockerhub') {
         steps{
           echo "deploy on dockerhub"
         }
