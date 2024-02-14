@@ -1,2 +1,2 @@
-FROM ubuntu/apache2
-ADD . /var/www/html
+FROM ubuntu:20.04
+RUN apt update && apt upgrade -y
