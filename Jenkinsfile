@@ -10,9 +10,8 @@ pipeline{
       }
       stage('Building image') {
         steps{
-          script {
-            dockerImage = docker.build website
-          }
+          echo "Building image"
+          sh "docker build /var/lib/jenkins/workspace/firstjob -t website"
         }
       }
     }
