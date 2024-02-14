@@ -11,11 +11,19 @@ pipeline{
       stage('Building image') {
         steps{
           echo "Building image"
+          sh "docker build -t website ."
         }
       }
       stage('deploy on dockerhub') {
         steps{
-          echo "deploy on dockerhub"
+          echo "deploy on dockerhub"          
+        }
+      }
+      stage("Deploy"){
+        steps{
+          echo"Deploying the container"         
+        }
+      }
         }
       }      
     }
