@@ -11,7 +11,6 @@ pipeline{
       stage('Building image') {
         steps{
           echo "Building image"
-          sh "docker build -t website ."
         }
       }
     }
